@@ -4,9 +4,6 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="75" height="75" />
-  </header>
   <main>
     <RouterView />
   </main>
@@ -20,18 +17,33 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
+.logo-wrapper {
+  background: darkblue;
+  height: 100%;
+}
+
+main,
+main > * {
+  height: 100%;
+}
+
+@media (min-width: 900px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 0;
+  }
+
+  .logo-wrapper {
+    margin-left: -100%;
+    padding-left: 100%;
+    margin-right: 20%;
   }
 }
 </style>

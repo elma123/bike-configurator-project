@@ -3,7 +3,7 @@
     <BikeResult :bike="generatedBike"/>
 
     <div class="configurator">
-      <h2><strong>Configure</strong> your bike</h2>
+      <h2 class="title"><strong>Configure</strong> your bike</h2>
       <form>
         <fieldset>
           <legend>Choose a model:</legend>
@@ -83,12 +83,36 @@ let generatedBike = computed<Bike>(() =>
 <style scoped>
 .wrapper {
   display: grid;
-  gap: 2rem;
+  align-items: flex-start;
 }
 
-@media (min-width: 1024px) {
+.configurator {
+  padding: 2rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div:has(> input) {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
   .wrapper {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+
+  .configurator {
+    padding: 5rem 0 0 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
   }
 }
 </style>
