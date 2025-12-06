@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "City High Frost",
+    "model": "city",
+    "frame": "high",
+    "paintwork": "white",
+    "price": 1899.00
+  },
+  {
+    "id": 2,
+    "name": "City High Midnight",
+    "model": "city",
+    "frame": "high",
+    "paintwork": "blue",
+    "price": 1949.00
+  },
+  {
+    "id": 3,
+    "name": "City High Cherry",
+    "model": "city",
+    "frame": "high",
+    "paintwork": "red",
+    "price": 1999.00
+  },
+
+  {
+    "id": 4,
+    "name": "City Low Frost",
+    "model": "city",
+    "frame": "low",
+    "paintwork": "white",
+    "price": 1849.00
+  },
+  {
+    "id": 5,
+    "name": "City Low Midnight",
+    "model": "city",
+    "frame": "low",
+    "paintwork": "blue",
+    "price": 1899.00
+  },
+  {
+    "id": 6,
+    "name": "City Low Cherry",
+    "model": "city",
+    "frame": "low",
+    "paintwork": "red",
+    "price": 1949.00
+  },
+
+  {
+    "id": 7,
+    "name": "City Mid Frost",
+    "model": "city",
+    "frame": "mid",
+    "paintwork": "white",
+    "price": 1875.00
+  },
+  {
+    "id": 8,
+    "name": "City Mid Midnight",
+    "model": "city",
+    "frame": "mid",
+    "paintwork": "blue",
+    "price": 1925.00
+  },
+  {
+    "id": 9,
+    "name": "City Mid Cherry",
+    "model": "city",
+    "frame": "mid",
+    "paintwork": "red",
+    "price": 1975.00
+  },
+
+  {
+    "id": 10,
+    "name": "Cargo High Frost",
+    "model": "cargo",
+    "frame": "high",
+    "paintwork": "white",
+    "price": 3299.00
+  },
+  {
+    "id": 11,
+    "name": "Cargo High Midnight",
+    "model": "cargo",
+    "frame": "high",
+    "paintwork": "blue",
+    "price": 3349.00
+  },
+  {
+    "id": 12,
+    "name": "Cargo High Cherry",
+    "model": "cargo",
+    "frame": "high",
+    "paintwork": "red",
+    "price": 3399.00
+  },
+
+  {
+    "id": 13,
+    "name": "Cargo Low Frost",
+    "model": "cargo",
+    "frame": "low",
+    "paintwork": "white",
+    "price": 3249.00
+  },
+  {
+    "id": 14,
+    "name": "Cargo Low Midnight",
+    "model": "cargo",
+    "frame": "low",
+    "paintwork": "blue",
+    "price": 3299.00
+  },
+  {
+    "id": 15,
+    "name": "Cargo Low Cherry",
+    "model": "cargo",
+    "frame": "low",
+    "paintwork": "red",
+    "price": 3349.00
+  },
+
+  {
+    "id": 16,
+    "name": "Cargo Mid Frost",
+    "model": "cargo",
+    "frame": "mid",
+    "paintwork": "white",
+    "price": 3275.00
+  },
+  {
+    "id": 17,
+    "name": "Cargo Mid Midnight",
+    "model": "cargo",
+    "frame": "mid",
+    "paintwork": "blue",
+    "price": 3325.00
+  },
+  {
+    "id": 18,
+    "name": "Cargo Mid Cherry",
+    "model": "cargo",
+    "frame": "mid",
+    "paintwork": "red",
+    "price": 3375.00
+  },
+
+  {
+    "id": 19,
+    "name": "Sporty High Frost",
+    "model": "sporty",
+    "frame": "high",
+    "paintwork": "white",
+    "price": 2599.00
+  },
+  {
+    "id": 20,
+    "name": "Sporty High Midnight",
+    "model": "sporty",
+    "frame": "high",
+    "paintwork": "blue",
+    "price": 2649.00
+  },
+  {
+    "id": 21,
+    "name": "Sporty High Cherry",
+    "model": "sporty",
+    "frame": "high",
+    "paintwork": "red",
+    "price": 2699.00
+  },
+
+  {
+    "id": 22,
+    "name": "Sporty Low Frost",
+    "model": "sporty",
+    "frame": "low",
+    "paintwork": "white",
+    "price": 2549.00
+  },
+  {
+    "id": 23,
+    "name": "Sporty Low Midnight",
+    "model": "sporty",
+    "frame": "low",
+    "paintwork": "blue",
+    "price": 2599.00
+  },
+  {
+    "id": 24,
+    "name": "Sporty Low Cherry",
+    "model": "sporty",
+    "frame": "low",
+    "paintwork": "red",
+    "price": 2649.00
+  },
+
+  {
+    "id": 25,
+    "name": "Sporty Mid Frost",
+    "model": "sporty",
+    "frame": "mid",
+    "paintwork": "white",
+    "price": 2575.00
+  },
+  {
+    "id": 26,
+    "name": "Sporty Mid Midnight",
+    "model": "sporty",
+    "frame": "mid",
+    "paintwork": "blue",
+    "price": 2625.00
+  },
+  {
+    "id": 27,
+    "name": "Sporty Mid Cherry",
+    "model": "sporty",
+    "frame": "mid",
+    "paintwork": "red",
+    "price": 2675.00
+  }
+]
