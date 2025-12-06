@@ -1,6 +1,6 @@
 <template>
-  <div class="result">
-    <div>
+  <div class="result-wrapper">
+    <div class="result">
       <h1>{{ bike.name }}</h1>
       <img
         :alt="`${bike.name} bike`"
@@ -33,14 +33,25 @@ const bikeId = computed(() => {
 </script>
 
 <style scoped>
-.result {
+.result-wrapper {
   padding: 2rem 1rem;
   background: darkblue;
   color: #fff;
 }
 
+.result {
+  margin-bottom: -5rem;
+}
+
 .price-wrapper {
+  position: fixed;
+  display: flex;
+  align-items:  baseline;
+  gap: 1rem;
+  inset: auto 0 0 0;
   margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: darkblue;
 }
 
 .price {
@@ -52,7 +63,7 @@ h1 {
 }
 
 @media (min-width: 900px) {
-  .result {
+  .result-wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -60,8 +71,18 @@ h1 {
     padding: 5rem 0 0 100%;
   }
 
+  .result {
+    margin-bottom: 0;
+  }
+
   .image {
     max-width: 120%;
+  }
+
+  .price-wrapper {
+    position: relative;
+    flex-direction: column;
+    padding: 0;
   }
 }
 </style>

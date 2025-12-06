@@ -87,7 +87,11 @@ let generatedBike = computed<Bike>(() =>
 }
 
 .configurator {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
 }
 
 form {
