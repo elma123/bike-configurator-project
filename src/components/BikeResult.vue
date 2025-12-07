@@ -5,7 +5,7 @@
       <img
         :alt="`${bike.name} bike`"
         class="image"
-        :src="`src/assets/bikes/bike-${bikeId}.png`"
+        :src="`src/assets/bikes/bike-${bike.id}.png`"
         width="768"
         height="576"
       />
@@ -21,21 +21,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
 import type { Bike } from '@/types/bike';
 
-const props = defineProps<{ bike: Bike }>();
-
-const bikeId = computed(() => {
-  return props.bike.id > 6 ? 1 : props.bike.id;
-});
-
+defineProps<{ bike: Bike }>();
 </script>
 
 <style scoped>
 .result-wrapper {
   padding: 2rem 1rem;
-  background: darkblue;
+  background: #710d7e;
   color: #fff;
 }
 
@@ -47,11 +41,11 @@ const bikeId = computed(() => {
   position: fixed;
   display: flex;
   align-items:  baseline;
-  gap: 1rem;
+  column-gap: 1rem;
   inset: auto 0 0 0;
   margin-top: 2rem;
   padding: 0.5rem 1rem;
-  background: darkblue;
+  background: #710d7e;
 }
 
 .price {
@@ -68,7 +62,7 @@ h1 {
     flex-direction: column;
     height: 100%;
     margin: 0 20% 0 -100%;
-    padding: 5rem 0 0 100%;
+    padding: 10rem 0 0 100%;
   }
 
   .result {
@@ -83,6 +77,7 @@ h1 {
     position: relative;
     flex-direction: column;
     padding: 0;
+    background: none;
   }
 }
 </style>

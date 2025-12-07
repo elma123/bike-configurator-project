@@ -37,19 +37,19 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="swatch">
           <legend>Choose a paintwork:</legend>
           <div>
             <input type="radio" id="white" name="paintwork" value="white" v-model="chosenPaintwork" checked />
-            <label for="white">Frost White</label>
+            <label for="white" style="background:white">Frost White</label>
           </div>
           <div>
             <input type="radio" id="blue" name="paintwork" value="blue" v-model="chosenPaintwork" />
-            <label for="blue">Midnight Blue</label>
+            <label for="blue" style="background:darkblue">Midnight Blue</label>
           </div>
           <div>
             <input type="radio" id="red" name="paintwork" value="red" v-model="chosenPaintwork" />
-            <label for="red">Candy Cane Red</label>
+            <label for="red" style="background:red">Candy Cane Red</label>
           </div>
         </fieldset>
       </form>
@@ -87,11 +87,11 @@ let generatedBike = computed<Bike>(() =>
 }
 
 .configurator {
-  padding: 3rem 1rem 5rem;
+  padding: 3rem 1rem 7rem;
 }
 
 .title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 form {
@@ -105,6 +105,55 @@ div:has(> input) {
   gap: 1rem;
 }
 
+/** Style radio buttons into buttons **/
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  flex: 1;
+  margin-bottom: 0.3rem;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+label {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 0.95rem;
+}
+
+input[type="radio"]:checked + label {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+
+.swatch label {
+  overflow: hidden;
+  text-indent: -999rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  white-space: nowrap;
+}
+
+.swatch input[type="radio"]:checked + label {
+  background: none;
+}
+
 @media (min-width: 900px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -112,7 +161,7 @@ div:has(> input) {
   }
 
   .configurator {
-    padding: 5rem 0 0 2rem;
+    padding: 10rem 0 0 2rem;
   }
 
   .title {

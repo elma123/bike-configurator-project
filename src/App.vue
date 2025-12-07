@@ -21,7 +21,7 @@ header {
 }
 
 .logo-wrapper {
-  background: darkblue;
+  background: #710d7e;
   height: 100%;
 }
 
